@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/cb_checkbox"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="之额哦获得了就是"
+            android:textSize="18sp" />
+        <!-- 整体布局，包括增加和减少商品数量的符号以及中间的商品数量 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- 减少商品数量的布局 -->
+            <Button
+                android:id="@+id/addbt"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#f2eaea"
+                android:text="-"
+                android:textColor="#0e0e0e"></Button>
+            <!-- 商品数量的布局 -->
+            <EditText
+                android:id="@+id/edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"></EditText>
+            <!-- 增加商品数量的布局 -->
+            <Button
+                android:id="@+id/subbt"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#f2eaea"
+                android:text="+"
+                android:textColor="#111112"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="332" />
+
+
+</LinearLayout>
