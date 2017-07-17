@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.onCheck
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //资源
         //找到控件
         tv_num = (TextView) findViewById(R.id.tv_num);
         tv_zongjai = (TextView) findViewById(R.id.tv_zongjai);
